@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - openjdk8
+before_install:
+  - chmod +x mvnw
+  - export TZ=Brazil/East
+deploy:
+  provider: heroku
+  app: $APP
